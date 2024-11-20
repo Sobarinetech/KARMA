@@ -1,1 +1,10 @@
 streamlit
+google-generativeai
+wordcloud
+matplotlib
+langdetect
+googletrans
+fpdf
+concurrent
+textblob
+nltk
