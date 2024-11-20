@@ -5,6 +5,5 @@ matplotlib
 langdetect
 googletrans
 fpdf
-concurrent
 textblob
 nltk
