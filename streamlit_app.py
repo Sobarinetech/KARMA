@@ -174,7 +174,7 @@ if email_content and st.button("Generate Insights"):
                 readability = future_readability.result() if future_readability else 0
                 grammar = future_grammar_check.result() if future_grammar_check else ""
 
-        # Step 3: Display Results
+        # Step 3: Display Results in a mobile-friendly layout
         st.subheader("AI Summary")
         st.write(summary)
 
@@ -214,7 +214,7 @@ if email_content and st.button("Generate Insights"):
         if enable_wordcloud:
             st.subheader("Word Cloud")
             wordcloud = WordCloud(width=800, height=400, background_color="white", max_words=100).generate(email_content)
-            fig, ax = plt.subplots()
+            fig, ax = plt.subplots(figsize=(8, 4))
             ax.imshow(wordcloud, interpolation="bilinear")
             ax.axis("off")
             st.pyplot(fig)
